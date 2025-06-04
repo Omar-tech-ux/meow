@@ -189,7 +189,7 @@ const ButterflyGame: React.FC = () => {
       }
 
       // 6) Stop & show message at 10 points
-      if (score >= 20) {
+      if (score >= 15) {
         setGameFrozen(true);
         setShowAnniversaryMessage(true);
       }
