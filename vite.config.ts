@@ -1,7 +1,11 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+// vite.config.ts
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
 
-// https://vite.dev/config/
 export default defineConfig({
+  base: '/meow/', // <-- set this to your repo name
   plugins: [react()],
-})
+  build: {
+    outDir: 'dist',
+  },
+});
